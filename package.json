@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "nodemailer": "^6.8.0"
+  },
+  "name": "java-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asvspb/Java-Script.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asvspb/Java-Script/issues"
+  },
+  "homepage": "https://github.com/asvspb/Java-Script#readme",
+  "description": ""
+}
