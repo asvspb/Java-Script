@@ -1,7 +1,12 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const nodemailer = require('nodemailer');
 
+const app = express();
 
-const getRandomFloat = function(from, to, decimal) {
-    const random = Math.random() * ( to - from) + from;
-    return Number(random.toFixed(decimal));
-};
-export { getRandomFloat };
+app.get('/', (req, res) => {
+    res.send('Hello');
+});
+
+app.listen(3000, () => console.log('Server started...'));
