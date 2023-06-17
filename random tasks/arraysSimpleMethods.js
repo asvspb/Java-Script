@@ -30,9 +30,20 @@ simpleArr.reverse();    //?
 // concat объединяет массивы в один
 simpleArr.concat(simpleArrCopy); //?
 
-// join объединяет массив в строку
+// объединение массивов в один с помощью распаковки
+let someNewArr = [...simpleArr, ...simpleArrCopy];  //?
+
+// join объединяет массив в строку , не изменяя сам массив
 simpleArr.join(''); //?
 typeof (simpleArr.join('')); //?
 
 // sort сортирует массив по возрастанию или убыванию
 simpleArr.sort(); //?
+
+// извлечение последнего элемента массива
+simpleArr[simpleArr.length - 1]; //?
+// извлечение последнего элемента с помощью метода at()
+simpleArr.at(-1); //?
+
+// метод применим так же к строкам
+'someString'.at(4); //?

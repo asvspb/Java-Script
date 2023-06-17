@@ -1,4 +1,5 @@
-// Map отвечает за преобразование массива в объект, представляет собой структуру данных, которая хранит коллекцию пар "ключ-значение". 
+// Map отвечает за преобразование массива в объект, представляет собой структуру данных, которая хранит коллекцию пар "ключ-значение".
+// ключем в Map является любое значение,и значением любое значение
 
 // функция возвращает значение текущего времени (часы в числовом формате)
 function getCurrentTime() {
@@ -81,7 +82,6 @@ const questionMap = new Map([
     [false, 'Try again'],
 ]);
 
-// @ts-ignore
 console.log(questionMap.get('question'));
 const answer = Number('3'); //?
 
@@ -92,7 +92,6 @@ for (let [key, value] of questionMap.entries()) {
     }
 }
 
-// @ts-ignore
 console.log(questionMap.get(questionMap.get('correct') === answer)); //?
 
 const oooBject = {
