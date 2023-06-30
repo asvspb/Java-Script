@@ -7,9 +7,18 @@ const findElement = _array.findLast(element => {
 })
 
 // новый массив из старого
-const __array = [1, 2, 3, 4, 9];
 // const new__array = [...__array];
 // new__array[new__array.length - 1] = 5;
 // console.log(new__array);
-const new__array = __array.with(-1, 5); //?
+const new_array = _array.with(-1, 5); //?
 
+// сортировка массива
+// _array.sort((a, b) => {
+//     return a - b;
+// })
+const __array = [3, 9, 5, 1, 2, 7] // несортированный массив
+const newSorted__array = __array.toSorted(); //?
+const newReversed__array = newSorted__array.toReversed(); //?
+
+// new arr from old and spliced (startted position and number to cutoff)
+const newSpliced__array = __array.toSpliced(1, 4); //?
